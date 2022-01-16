@@ -29,6 +29,7 @@ public class BaseController {
     @Action("计算<.+=>str>")
     public String add(@Param("str") String str) {
         try {
+            System.out.println(str);
             String[] ss = str.split("\\+");
             Integer a = Integer.parseInt(ss[0]);
             Integer b = Integer.parseInt(ss[1]);

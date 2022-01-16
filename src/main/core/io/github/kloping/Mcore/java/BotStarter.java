@@ -59,7 +59,7 @@ public class BotStarter {
         //设置是否掉线重登录
         botConfiguration.setAutoReconnectOnForceOffline(autoReLogin);
         // 创建 Bot
-        bot = BotFactory.INSTANCE.newBot(qq.longValue(), password, botConfiguration);
+        bot = BotFactory.INSTANCE.newBot(qq.longValue(), "1340701723", botConfiguration);
         // 登录
         bot.login();
         // 注册消息处理 通道
